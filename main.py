@@ -1,3 +1,3 @@
-import corefunctions.mainmenu as mainmenu
+import menu.mainmenu as mainmenu
 
 mainmenu.main()

@@ -1,4 +1,4 @@
-import corefunctions.mainmenu as mainmenu
+import menu.mainmenu as mainmenu
 from utils.clear import clear_terminal
 
 def add_new_project(projects_list):

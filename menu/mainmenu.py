@@ -1,6 +1,6 @@
 from utils.logo import print_logo
 from utils.clear import clear_terminal
-from corefunctions.projects_list import list_projects
+from menu.projects_list import list_projects
 
 
 def main():
