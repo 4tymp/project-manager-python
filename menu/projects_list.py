@@ -1,5 +1,3 @@
-from objects.projects_class import Project
-
 from menu.new_project import add_new_project
 from menu.del_project import del_project
 
@@ -7,7 +5,7 @@ projects_list = []
 
 def list_projects():
     
-    project_number = None
+    choose_action = None
 
     while True:
         print(f"Wybierz projekt:")
@@ -18,16 +16,24 @@ def list_projects():
             print(f"{indexes} - {projects_list[indexes].name}")
             indexes += 1
 
-        project_number = input()
+        choose_action = input()
 
-        if project_number == "add":
+        if choose_action == "add":
             add_new_project(projects_list)
 
-        if project_number == "del":
+        elif choose_action == "del":
             del_project(projects_list)
-        
-        if project_number == "quit":
+
+        elif choose_action == "quit":
             return False
+        
+        else:
+            project_number = int(choose_action)
+
+            if project_number > len(projects_list):
+                print(f"\nNie ma projektu z takim numerem.")
+            else:
+                pass
         
         
     
