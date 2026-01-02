@@ -3,7 +3,8 @@
 __MACOSX/
 .AppleDouble
 .LSOverride
-Icon[]
+Icon[
+]
 
 # Thumbnails
 ._*
@@ -240,3 +241,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Safety!
+db/

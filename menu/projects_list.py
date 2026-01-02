@@ -26,4 +26,7 @@ def list_projects():
         
         if project_number == "quit":
             return False
+        
+        if project_number is int:
+            pass
     
