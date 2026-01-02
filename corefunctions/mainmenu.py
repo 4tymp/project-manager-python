@@ -6,7 +6,5 @@ from corefunctions.projects_list import list_projects
 def main():
     clear_terminal()
     print_logo()
-
-    print(f"Wybierz projekt:")
     
     list_projects()
