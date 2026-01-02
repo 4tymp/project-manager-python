@@ -3,6 +3,7 @@ from menu.del_project import del_project
 
 from in_projects.all_tasks_screen import show_mainscreen
 from utils.clear import clear_terminal
+from utils.logo import print_logo
 
 projects_list = []
 
@@ -12,6 +13,7 @@ def list_projects():
 
     while True:
         clear_terminal()
+        print_logo()
 
         print("== Wybierz projekt: ==")
         print("add - tworzy nowy projekt | del - usun wybrany projekt | quit - konczy program\n")

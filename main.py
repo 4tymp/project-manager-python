@@ -1,3 +1,3 @@
-import menu.mainmenu as mainmenu
+from menu.projects_list import list_projects
 
-mainmenu.main()
+list_projects()
