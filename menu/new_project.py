@@ -1,11 +1,14 @@
-import menu.mainmenu as mainmenu
+from objects.projects_class import Project
 from utils.clear import clear_terminal
 
 def add_new_project(projects_list):
     clear_terminal()
 
-    new_project_name = input(f"jak ma sie nazywac?\n")
-    projects_list.append(new_project_name)
+    name = input(f"jak ma sie nazywac?\n")
+
+    new_project = Project(name)
+    projects_list.append(new_project)
+
 
     clear_terminal()
-    print(f"dodano {new_project_name}.\n")
+    print(f"dodano {name}.\n")

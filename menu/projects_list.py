@@ -1,3 +1,5 @@
+from objects.projects_class import Project
+
 from menu.new_project import add_new_project
 from menu.del_project import del_project
 
@@ -12,8 +14,8 @@ def list_projects():
         print("add - tworzy nowy projekt | del - usun wybrany projekt | quit - konczy program\n")
         
         indexes = 0
-        for i in projects_list:
-            print(f"{indexes} - {i}")
+        while indexes < len(projects_list):
+            print(f"{indexes} - {projects_list[indexes].name}")
             indexes += 1
 
         project_number = input()
@@ -27,6 +29,5 @@ def list_projects():
         if project_number == "quit":
             return False
         
-        if project_number is int:
-            pass
+        
     
