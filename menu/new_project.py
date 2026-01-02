@@ -11,4 +11,5 @@ def add_new_project(projects_list):
 
 
     clear_terminal()
-    print(f"dodano {name}.\n")
+    print(f"!! pomyslnie dodano {name}. !!")
+    input() # pauzuje calosc zeby bylo widac ze dodano

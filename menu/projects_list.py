@@ -11,6 +11,8 @@ def list_projects():
     choose_action = None
 
     while True:
+        clear_terminal()
+
         print("== Wybierz projekt: ==")
         print("add - tworzy nowy projekt | del - usun wybrany projekt | quit - konczy program\n")
         
@@ -28,7 +30,7 @@ def list_projects():
             del_project(projects_list)
 
         elif choose_action == "quit":
-            return False
+            break
         
         else:
             project_number = int(choose_action)
@@ -37,7 +39,7 @@ def list_projects():
                 clear_terminal()
                 print(f"\nNie ma projektu z takim numerem.\n")
             else:
-                show_mainscreen(projects_list, project_number)
-        
-        
-    
+
+                check_quit = show_mainscreen(projects_list, project_number)
+                if check_quit == True: ##jezeli w ekranie projektu wpiszesz quit zamiast return program sie konczy
+                    break
