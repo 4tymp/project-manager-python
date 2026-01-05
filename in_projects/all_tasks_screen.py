@@ -11,10 +11,13 @@ def show_mainscreen(projects_list, number):
         clear_terminal()
 
         print(f"== wyswietlam dla {current_project} ==")
-        print("add - nowy task | del - usun taska | edit - edytuj taska | return - wroc do menu projektow | quit - konczy program")
+        print(f"add - nowy task | del - usun taska | edit - edytuj taska | return - wroc do menu projektow | quit - konczy program")
 
         # tutaj wyswietlanie taskow!
-        display_tasks()
+        print("------------------------------------------------------------------------------------------------------------------")
+        print("id - task - opis - progress")
+
+        display_tasks(projects_list, number)
 
         choose_action = input()
 

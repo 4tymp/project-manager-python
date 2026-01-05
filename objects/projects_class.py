@@ -6,5 +6,5 @@ class Project:
         self.tasks = []
 
     def add_task(self, task_name, desc):
-        task = Task(task_name,desc,self)
+        task = Task(task_name,desc)
         self.tasks.append(task)
