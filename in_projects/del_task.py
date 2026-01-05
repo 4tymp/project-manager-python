@@ -17,7 +17,7 @@ def del_task(task_list):
 
     if check_del == chosen_one:
         task_list.pop(chosen_one)
-        print(f"pomyslnie usunieto task o id {chosen_one}.\n")
+        print(f"pomyslnie usunieto task o id {chosen_one}.")
     else:
         print(f"anulowano probe usuniecia taska o id {chosen_one}")
 
