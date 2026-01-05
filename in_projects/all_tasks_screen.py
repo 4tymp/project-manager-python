@@ -1,5 +1,6 @@
 from in_projects.new_task import add_new_task
 from in_projects.del_task import del_task
+from in_projects.task_display import display_tasks
 
 from utils.clear import clear_terminal
 
@@ -12,8 +13,8 @@ def show_mainscreen(projects_list, number):
         print(f"== wyswietlam dla {current_project} ==")
         print("add - nowy task | del - usun taska | edit - edytuj taska | return - wroc do menu projektow | quit - konczy program")
 
-        while 1>2:
-            pass
+        # tutaj wyswietlanie taskow!
+        display_tasks()
 
         choose_action = input()
 
