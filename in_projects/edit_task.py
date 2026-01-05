@@ -1,4 +1,5 @@
 def edit_task(task_list):
+    print() #dodane dla estetyki panowie
     try:
         chosen_one = int(input("ktorego taska chcesz edytowac? "))
     except:
@@ -9,9 +10,9 @@ def edit_task(task_list):
         input()
     else:
         print("")
-        edited_element = input("co chcesz edytować? (0 - progress, 1 - task, 2 - opis) ")
+        edited_element = input("co chcesz edytować? (1 - progress, 2 - task, 3 - opis) ")
 
-        if edited_element == "0" or edited_element == "progress":
+        if edited_element == "1" or edited_element == "progress":
             print("\npodaj nowy progress:")
             new_value = input("0 - todo | 1 - doing | 2 - done | 3 - fixing ")
 
@@ -27,15 +28,15 @@ def edit_task(task_list):
             print(f"\npomyslnie zmieniono progress taska o id {chosen_one} na {task_list[chosen_one].progress}.")
             input()
 
-        elif edited_element == "1" or edited_element == "task":
+        elif edited_element == "2" or edited_element == "task":
             print(f"\npodaj nowego taska:")
             new_value = input()
             task_list[chosen_one].task = new_value
 
-            print(f"\n poprawnie zmieniono taska o id {chosen_one} na {new_value}.")
+            print(f"\npoprawnie zmieniono taska o id {chosen_one} na {new_value}.")
             input()
 
-        elif edited_element == "2" or edited_element == "opis":
+        elif edited_element == "3" or edited_element == "opis":
             print(f"\npodaj nowy opis:")
             new_value = input()
             task_list[chosen_one].desc = new_value

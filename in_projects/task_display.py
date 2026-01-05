@@ -2,30 +2,24 @@ from in_projects.group_tasks_by_progress import start_grouping_by_progress
 
 def display_tasks(task_list):
 
-    tasks_todo = []
-    tasks_doing = []
-    tasks_done = []
-    tasks_fixing = []
-
-    start_grouping_by_progress(task_list,tasks_todo,tasks_doing,tasks_done,tasks_fixing)
-
+    tasks_todo, tasks_doing, tasks_done, tasks_fixing = start_grouping_by_progress(task_list)
 
     print("==== TODO ====")
 
-    for i in tasks_todo:
-        print(f"{task_list.index(i)} - {i.task} - {i.desc}")
+    for index,task in tasks_todo:
+        print(f"{index} - {task.task} - {task.desc}")
 
-    print("==== DOING ====")    
+    print("\n==== DOING ====")    
 
-    for i in tasks_doing:
-        print(f"{task_list.index(i)} - {i.task} - {i.desc}")
+    for index,task in tasks_doing:
+        print(f"{index} - {task.task} - {task.desc}")
 
-    print("==== DONE ====")    
+    print("\n==== DONE ====")    
 
-    for i in tasks_done:
-        print(f"{task_list.index(i)} - {i.task} - {i.desc}")
+    for index,task in tasks_done:
+        print(f"{index} - {task.task} - {task.desc}")
             
-    print("==== FIXING ====")    
+    print("\n==== FIXING ====")    
 
-    for i in tasks_fixing:
-        print(f"{task_list.index(i)} - {i.task} - {i.desc}")
+    for index,task in tasks_fixing:
+        print(f"{index} - {task.task} - {task.desc}")
