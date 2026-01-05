@@ -6,7 +6,7 @@ def edit_task(task_list):
         chosen_one = len(task_list)+1
 
     if chosen_one > len(task_list):
-        print("\nNie ma takiego taska.")
+        print("\n!! Nie ma takiego taska !!\n")
         input()
     else:
         print("")
@@ -25,7 +25,7 @@ def edit_task(task_list):
             elif new_value == "3" or new_value == "fixing":
                 task_list[chosen_one].progress = "fixing"
             
-            print(f"\npomyslnie zmieniono progress taska o id {chosen_one} na {task_list[chosen_one].progress}.")
+            print(f"\n!! pomyslnie zmieniono progress taska o id {chosen_one} na {task_list[chosen_one].progress} !!\n")
             input()
 
         elif edited_element == "2" or edited_element == "task":
@@ -33,7 +33,7 @@ def edit_task(task_list):
             new_value = input()
             task_list[chosen_one].task = new_value
 
-            print(f"\npoprawnie zmieniono taska o id {chosen_one} na {new_value}.")
+            print(f"\n!! poprawnie zmieniono taska o id {chosen_one} na {new_value} !!\n")
             input()
 
         elif edited_element == "3" or edited_element == "opis":
@@ -41,8 +41,8 @@ def edit_task(task_list):
             new_value = input()
             task_list[chosen_one].desc = new_value
 
-            print(f"\npoprawnie zmieniono opis taska o id {chosen_one} na {new_value}.")
+            print(f"\n!! poprawnie zmieniono opis taska o id {chosen_one} na {new_value} !!\n")
             input()
         else:
-            print(f"\nnie ma takiego elementu.")
+            print(f"\n!! nie ma takiego elementu !!\n")
             input()

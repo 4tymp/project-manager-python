@@ -8,5 +8,5 @@ def add_new_task(projects_list, number):
     projects_list[number].add_task(name)
 
     clear_terminal()
-    print(f"!! pomyślnie dodano {name} !!")
+    print(f"!! pomyślnie dodano {name} !!\n")
     input() #pauuje caly program zeby dal osie odczytac komunikat
