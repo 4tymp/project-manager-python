@@ -35,11 +35,14 @@ def list_projects():
             break
         
         else:
-            project_number = int(choose_action)
+            try:
+                project_number = int(choose_action)
+            except:
+                project_number = len(projects_list)+1
 
             if project_number >= len(projects_list):
                 clear_terminal()
-                print(f"\nNie ma projektu z takim numerem.\n")
+                print(f"\nNie ma projektu z takim numerem ani takiej komendy.\n")
             else:
 
                 check_quit = show_mainscreen(projects_list, project_number)

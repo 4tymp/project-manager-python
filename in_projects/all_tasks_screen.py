@@ -6,8 +6,10 @@ from in_projects.edit_task import edit_task
 from utils.clear import clear_terminal
 
 def show_mainscreen(projects_list, number):
+    
+    task_list = projects_list[number].tasks
+
     while True:
-        task_list = projects_list[number].tasks
 
         clear_terminal()
 
