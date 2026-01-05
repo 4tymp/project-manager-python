@@ -1,8 +1,8 @@
 from objects.projects_class import Project
 from objects.tasks_class import Task
 
-def display_tasks(projects_list, number):
-    task_list = projects_list[number].tasks
+def display_tasks(task_list):
+    
 
     i = 0
     while i < len(task_list):
