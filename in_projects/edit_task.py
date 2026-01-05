@@ -40,7 +40,7 @@ def edit_task(task_list):
             new_value = input()
             task_list[chosen_one].desc = new_value
 
-            print(f"\n poprawnie zmieniono opis taska o id {chosen_one} na {new_value}.")
+            print(f"\npoprawnie zmieniono opis taska o id {chosen_one} na {new_value}.")
             input()
         else:
             print(f"\nnie ma takiego elementu.")

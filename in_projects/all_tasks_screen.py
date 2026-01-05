@@ -20,7 +20,7 @@ def show_mainscreen(projects_list, number):
 
         # tutaj wyswietlanie taskow!
         print("------------------------------------------------------------------------------------------------------------------")
-        print("id - task - opis - progress")
+        print("id - task - opis")
 
         display_tasks(task_list)
 
