@@ -6,7 +6,10 @@ def del_project(projects_list):
     clear_terminal()
     
     print(f"\njestes pewny ze chcesz usunac projekt numer {chosen_one}?")
-    check_del = int(input("jezeli tak, wpisz jeszcze raz numer projektu który chcesz usunąc. "))
+    try:
+        check_del = int(input("jezeli tak, wpisz jeszcze raz numer projektu który chcesz usunąc. "))
+    except:
+        check_del = -1
 
     clear_terminal()
 

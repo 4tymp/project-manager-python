@@ -16,7 +16,7 @@ def list_projects():
         print_logo()
 
         print("== Wybierz projekt: ==")
-        print("add - tworzy nowy projekt | del - usun wybrany projekt | quit - konczy program\n")
+        print("add - tworzy nowy projekt | del - usun wybrany projekt | quit - konczy program")
         
         indexes = 0
         while indexes < len(projects_list):
