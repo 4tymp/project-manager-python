@@ -1,7 +1,7 @@
 import csv
 
 def save_file(projects_list):
-    with open("files/savedprojects.csv","w") as saved_file:
+    with open("files/savedprojects.csv","w", newline="") as saved_file:
         file_writer = csv.writer(saved_file)
 
         file_writer.writerow(["PROJEKT","TASK","OPIS","PROGRESS"])
