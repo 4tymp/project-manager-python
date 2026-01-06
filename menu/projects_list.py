@@ -4,7 +4,7 @@ from menu.del_project import del_project
 from in_projects.all_tasks_screen import show_mainscreen
 from utils.clear import clear_terminal
 from utils.logo import print_logo
-from utils.saving import create_file
+from utils.saving import save_file
 
 projects_list = []
 
@@ -33,7 +33,7 @@ def list_projects():
             del_project(projects_list)
 
         elif choose_action == "quit":
-            create_file()
+            save_file(projects_list)
             break
         
         else:
@@ -49,4 +49,5 @@ def list_projects():
 
                 check_quit = show_mainscreen(projects_list, project_number)
                 if check_quit == True: ##jezeli w ekranie projektu wpiszesz quit zamiast return program sie konczy
+                    save_file(projects_list)
                     break
