@@ -4,6 +4,7 @@ from menu.del_project import del_project
 from in_projects.all_tasks_screen import show_mainscreen
 from utils.clear import clear_terminal
 from utils.logo import print_logo
+from utils.saving import create_file
 
 projects_list = []
 
@@ -32,6 +33,7 @@ def list_projects():
             del_project(projects_list)
 
         elif choose_action == "quit":
+            create_file()
             break
         
         else:
