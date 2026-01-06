@@ -6,9 +6,9 @@ from utils.clear import clear_terminal
 from utils.logo import print_logo
 from utils.saving import save_file
 
-projects_list = []
 
-def list_projects():
+
+def list_projects(projects_list):
     
     choose_action = None
 

@@ -5,6 +5,6 @@ class Project:
         self.name = name
         self.tasks = []
 
-    def add_task(self, task_name):
-        task = Task(task_name)
+    def add_task(self, task_name, task_desc="", task_progress="todo"):
+        task = Task(task_name, task_desc, task_progress)
         self.tasks.append(task)
